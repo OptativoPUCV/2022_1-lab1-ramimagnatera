@@ -8,3 +8,9 @@ exercises.c:15:8: error: expected expression before ‘=’ token
         ^
 Compilation failed
 82b7e0c
+Sun Mar 13 22:52:02 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+51bdf00
