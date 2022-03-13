@@ -34,3 +34,13 @@ Sun Mar 13 22:59:06 UTC 2022:
  tests:  1|6
 total_score: 10/70
 19a139f
+Sun Mar 13 23:54:11 UTC 2022: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:43:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+Compilation failed
+de1e9a1
