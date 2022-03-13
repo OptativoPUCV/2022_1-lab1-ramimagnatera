@@ -14,3 +14,17 @@ Sun Mar 13 22:52:02 UTC 2022:
  tests:  1|6
 total_score: 10/70
 51bdf00
+Sun Mar 13 22:57:28 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c:39:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘void’
+ void sumaNultimos(int a[], int n, int m, int * suma) {
+ ^~~~
+test.c: In function ‘test_suma_n’:
+test.c:91:5: error: implicit declaration of function ‘sumaNultimos’ [-Werror=implicit-function-declaration]
+     sumaNultimos(a, 10, m, res);
+     ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fe1a6c7

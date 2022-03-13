@@ -28,7 +28,7 @@ int sumaN(int a[], int N) {
 
     return tot;
 }
-
+bbbbb
 /*
 Ejercicio 2.
 Esta función debe sumar los últimos m números del 
