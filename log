@@ -28,3 +28,9 @@ test.c:91:5: error: implicit declaration of function ‘sumaNultimos’ [-Werror
 cc1: all warnings being treated as errors
 Compilation failed
 fe1a6c7
+Sun Mar 13 22:59:06 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+19a139f
