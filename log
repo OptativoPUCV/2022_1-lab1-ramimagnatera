@@ -76,3 +76,23 @@ Mon Mar 14 00:10:03 UTC 2022:
  tests:  2|5
 total_score: 20/70
 2fc9422
+Mon Mar 14 00:36:11 UTC 2022: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:65:17: error: expected expression before ‘Persona’
+   strcpy(nombre,Persona.nombre);
+                 ^~~~~~~
+exercises.c:67:15: error: expected expression before ‘Persona’
+   strcpy(rut, Persona.rut);
+               ^~~~~~~
+exercises.c:69:10: error: expected identifier or ‘(’ before ‘.’ token
+   Persona.edad = edad;
+          ^
+exercises.c:63:12: error: unused variable ‘crearPersona’ [-Werror=unused-variable]
+   Persona* crearPersona = malloc (sizeof(Persona));
+            ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fdc65ad
