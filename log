@@ -222,3 +222,16 @@ exercises.c:68:9: error: assignment to expression with array type
          ^
 Compilation failed
 2f28aa0
+Mon Mar 14 01:44:09 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:66:12: error: assignment to expression with array type
+   p.nombre = malloc(30*sizeof(char));
+            ^
+exercises.c:68:9: error: assignment to expression with array type
+   p.rut = (char*)malloc(11*sizeof(char));
+         ^
+Compilation failed
+4e68116
