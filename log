@@ -209,3 +209,16 @@ exercises.c:65:12: error: variable ‘p’ set but not used [-Werror=unused-but-
 cc1: all warnings being treated as errors
 Compilation failed
 9dd0246
+Mon Mar 14 01:42:52 UTC 2022: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:66:12: error: assignment to expression with array type
+   p.nombre = malloc(30*sizeof(char));
+            ^
+exercises.c:68:9: error: assignment to expression with array type
+   p.rut = malloc(11*sizeof(char));
+         ^
+Compilation failed
+2f28aa0
