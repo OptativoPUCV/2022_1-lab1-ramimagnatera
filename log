@@ -168,3 +168,9 @@ exercises.c:64:12: error: variable ‘persona’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 e597ccb
+Mon Mar 14 00:55:51 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+18a61f1
