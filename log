@@ -126,3 +126,16 @@ exercises.c:74:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 8177fdb
+Mon Mar 14 00:52:23 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:65:11: error: conflicting types for ‘persona’
+   Persona persona;
+           ^~~~~~~
+exercises.c:63:12: note: previous definition of ‘persona’ was here
+   Persona* persona = (Persona*) malloc (sizeof(Persona));
+            ^~~~~~~
+Compilation failed
+e135caf
