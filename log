@@ -180,3 +180,32 @@ Mon Mar 14 01:20:05 UTC 2022:
  tests:  2|5
 total_score: 20/70
 b9c145b
+Mon Mar 14 01:22:20 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:65:12: error: conflicting types for ‘p’
+   Persona* p = (Persona*) malloc (sizeof(Persona));
+            ^
+exercises.c:63:11: note: previous declaration of ‘p’ was here
+   Persona p;
+           ^
+exercises.c:67:11: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   strcpy(p.nombre,nombre);
+           ^
+           ->
+exercises.c:69:11: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   strcpy(p.rut, rut);
+           ^
+           ->
+exercises.c:71:4: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   p.edad = edad;
+    ^
+    ->
+exercises.c:65:12: error: variable ‘p’ set but not used [-Werror=unused-but-set-variable]
+   Persona* p = (Persona*) malloc (sizeof(Persona));
+            ^
+cc1: all warnings being treated as errors
+Compilation failed
+9dd0246
