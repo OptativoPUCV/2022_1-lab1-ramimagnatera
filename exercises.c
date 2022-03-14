@@ -89,7 +89,7 @@ Vector * crearVector(int n) {
   
   Vector *p = NULL;
   p = (Vector*) malloc(n*sizeof(Vector));
-  //if(p == 0) exit(EXIT_FAILURE);
+  if(p == 0) exit(EXIT_FAILURE);
   return p;
 }
 
