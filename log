@@ -366,3 +366,24 @@ exercises.c:93:3: error: expected ‘,’ or ‘;’ before ‘if’
    ^~
 Compilation failed
 82a5331
+Mon Mar 14 02:44:22 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from /usr/include/time.h:29:0,
+                 from test.c:4:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:14: error: invalid initializer
+   Vector p = NULL;
+              ^
+In file included from test.c:5:0:
+exercises.c:92:11: error: conflicting types for ‘p’
+   Vector* p = (Vector*) malloc(n*sizeof(Vector))
+           ^
+exercises.c:90:10: note: previous definition of ‘p’ was here
+   Vector p = NULL;
+          ^
+exercises.c:93:3: error: expected ‘,’ or ‘;’ before ‘if’
+   if(p == 0) exit(EXIT_FAILURE);
+   ^~
+Compilation failed
+34fac6f
