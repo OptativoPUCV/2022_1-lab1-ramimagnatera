@@ -139,3 +139,32 @@ exercises.c:63:12: note: previous definition of ‘persona’ was here
             ^~~~~~~
 Compilation failed
 e135caf
+Mon Mar 14 00:52:46 UTC 2022: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:12: error: conflicting types for ‘persona’
+   Persona* persona = (Persona*) malloc (sizeof(Persona));
+            ^~~~~~~
+exercises.c:62:11: note: previous declaration of ‘persona’ was here
+   Persona persona;
+           ^~~~~~~
+exercises.c:66:17: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   strcpy(persona.nombre,nombre);
+                 ^
+                 ->
+exercises.c:68:17: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   strcpy(persona.rut, rut);
+                 ^
+                 ->
+exercises.c:70:10: error: ‘persona’ is a pointer; did you mean to use ‘->’?
+   persona.edad = edad;
+          ^
+          ->
+exercises.c:64:12: error: variable ‘persona’ set but not used [-Werror=unused-but-set-variable]
+   Persona* persona = (Persona*) malloc (sizeof(Persona));
+            ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e597ccb
