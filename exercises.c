@@ -84,14 +84,14 @@ typedef struct {
    int * datos; // arreglo dinámico
    int capacidad; // capacidad del arreglo
 } Vector;
-/*
+
 Vector* crearVector(int n){
-  Vector *p = NULL;
+  /*Vector *p = NULL;
   p = (Vector*) malloc(n*sizeof(Vector));
   if(p == 0) exit(EXIT_FAILURE);
-  return p;
+  return p;*/
 }
-*/
+
 /*
 Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor), 

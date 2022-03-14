@@ -510,3 +510,14 @@ test.c:133:17: error: initialization makes pointer from integer without a cast [
 cc1: all warnings being treated as errors
 Compilation failed
 dac6970
+Mon Mar 14 02:57:50 UTC 2022: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearVector’:
+exercises.c:93:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+99c9380
