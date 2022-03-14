@@ -433,3 +433,16 @@ exercises.c:90:10: note: previous definition of ‘p’ was here
           ^
 Compilation failed
 293fe10
+Mon Mar 14 02:47:45 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearVector’:
+exercises.c:92:11: error: redefinition of ‘p’
+   Vector* p = (Vector*) malloc(n*sizeof(Vector));
+           ^
+exercises.c:90:11: note: previous definition of ‘p’ was here
+   Vector *p = NULL;
+           ^
+Compilation failed
+27cf62b
