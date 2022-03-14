@@ -248,3 +248,19 @@ exercises.c:68:9: error: assignment to expression with array type
          ^
 Compilation failed
 2f726a7
+Mon Mar 14 01:46:45 UTC 2022: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:67:11: error: invalid type argument of ‘->’ (have ‘Persona {aka struct <anonymous>}’)
+   strcpy(p->nombre,nombre);
+           ^~
+exercises.c:69:11: error: invalid type argument of ‘->’ (have ‘Persona {aka struct <anonymous>}’)
+   strcpy(p->rut, rut);
+           ^~
+exercises.c:71:4: error: invalid type argument of ‘->’ (have ‘Persona {aka struct <anonymous>}’)
+   p->edad = edad;
+    ^~
+Compilation failed
+5538a61

@@ -63,12 +63,12 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
   Persona p;
   
   /*Persona* p = (Persona*) malloc (sizeof(Persona));*/
-  p.nombre = malloc(31*sizeof(char));
-  strcpy(p.nombre,nombre);
-  p.rut = malloc(12*sizeof(char));
-  strcpy(p.rut, rut);
 
-  p.edad = edad;
+  strcpy(p->nombre,nombre);
+
+  strcpy(p->rut, rut);
+
+  p->edad = edad;
   
   return NULL;
 }
