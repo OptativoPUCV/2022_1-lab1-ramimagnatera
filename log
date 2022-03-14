@@ -537,3 +537,9 @@ exercises.c:62:11: error: unused variable ‘p’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9256051
+Mon Mar 14 02:58:48 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+8880508
