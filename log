@@ -312,3 +312,31 @@ exercises.c:73:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 3e064c1
+Mon Mar 14 02:16:55 UTC 2022: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:72:10: error: expected expression before ‘Persona’
+   return Persona*;
+          ^~~~~~~
+exercises.c: In function ‘crearVector’:
+exercises.c:90:4: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   (vector*) * ()
+    ^~~~~~
+    Vector
+exercises.c:90:4: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:90:11: error: expected expression before ‘)’ token
+   (vector*) * ()
+           ^
+exercises.c: In function ‘crearPersona’:
+exercises.c:73:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+exercises.c: In function ‘crearVector’:
+exercises.c:93:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+bad093a
