@@ -481,3 +481,20 @@ exercises.c:94:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 dc67cd8
+Mon Mar 14 02:55:57 UTC 2022: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:66:19: error: invalid type argument of ‘->’ (have ‘Persona {aka struct <anonymous>}’)
+   strcpy(nombre, p->nombre);
+                   ^~
+test.c: In function ‘test_creaV’:
+test.c:133:17: error: implicit declaration of function ‘crearVector’; did you mean ‘crearPersona’? [-Werror=implicit-function-declaration]
+     Vector *v = crearVector(size);
+                 ^~~~~~~~~~~
+                 crearPersona
+test.c:133:17: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+cc1: all warnings being treated as errors
+Compilation failed
+4b34dbf

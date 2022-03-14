@@ -63,7 +63,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
   
   /*Persona* p = (Persona*) malloc (sizeof(Persona));*/
 
-  strcpy(nombre, p.nombre);
+  strcpy(nombre, p->nombre);
 
   strcpy(rut, p.rut);
 
@@ -84,15 +84,14 @@ typedef struct {
    int * datos; // arreglo dinámico
    int capacidad; // capacidad del arreglo
 } Vector;
-
-Vector* crearVector(int n) {
-  
-  Vector p = NULL;
+/*
+Vector* crearVector(int n){
+  Vector *p = NULL;
   p = (Vector*) malloc(n*sizeof(Vector));
   if(p == 0) exit(EXIT_FAILURE);
   return p;
 }
-
+*/
 /*
 Ejercicio 5a.
 Programe la función void asignarValor(Vector * v, int i, int valor), 
