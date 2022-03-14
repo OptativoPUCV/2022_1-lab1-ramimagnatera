@@ -106,3 +106,9 @@ exercises.c:71:10: error: expected identifier or ‘(’ before ‘.’ token
           ^
 Compilation failed
 e2eb159
+Mon Mar 14 00:50:50 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+52aaf82
