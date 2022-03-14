@@ -69,7 +69,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
 
   p.edad = edad;
   
-  return Persona*;
+  return NULL;
 }
 
 /*
@@ -86,8 +86,6 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-
-  (vector*) * ()
   
    return NULL;
 }
