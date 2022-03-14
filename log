@@ -456,3 +456,28 @@ Mon Mar 14 02:49:35 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 fa629a7
+Mon Mar 14 02:52:28 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from /usr/include/time.h:29:0,
+                 from test.c:4:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:14: error: invalid initializer
+   Vector p = NULL;
+              ^
+In file included from test.c:5:0:
+exercises.c:91:5: error: incompatible types when assigning to type ‘Vector {aka struct <anonymous>}’ from type ‘Vector * {aka struct <anonymous> *}’
+   p = (Vector*) malloc(n*sizeof(Vector));
+     ^
+exercises.c:92:8: error: invalid operands to binary == (have ‘Vector {aka struct <anonymous>}’ and ‘int’)
+   if(p == 0) exit(EXIT_FAILURE);
+        ^~
+exercises.c:93:10: error: incompatible types when returning type ‘Vector {aka struct <anonymous>}’ but ‘Vector * {aka struct <anonymous> *}’ was expected
+   return p;
+          ^
+exercises.c:94:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+dc67cd8

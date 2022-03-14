@@ -85,9 +85,9 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector * crearVector(int n) {
+Vector* crearVector(int n) {
   
-  Vector *p = NULL;
+  Vector p = NULL;
   p = (Vector*) malloc(n*sizeof(Vector));
   if(p == 0) exit(EXIT_FAILURE);
   return p;
