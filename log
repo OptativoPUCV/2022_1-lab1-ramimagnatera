@@ -729,3 +729,9 @@ exercises.c:88:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__
 exercises.c:88:12: error: expected expression before ‘.’ token
 Compilation failed
 37c3c85
+Tue Mar 15 05:09:37 UTC 2022: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+ tests:  4|3
+total_score: 40/70
+a0c62a6
