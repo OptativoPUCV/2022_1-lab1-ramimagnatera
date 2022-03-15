@@ -747,3 +747,13 @@ Tue Mar 15 05:11:56 UTC 2022:
  tests:  6|2
 total_score: 50/70
 490ce4f
+Tue Mar 15 05:14:00 UTC 2022: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV’:
+exercises.c:123:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+Compilation failed
+2611b15
