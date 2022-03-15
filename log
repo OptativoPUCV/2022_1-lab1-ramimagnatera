@@ -647,3 +647,18 @@ Tue Mar 15 00:14:39 UTC 2022:
  tests:  3|4
 total_score: 30/70
 f5e86b0
+Tue Mar 15 00:15:43 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:3: error: ‘p’ undeclared (first use in this function)
+   p = (Vector*)calloc(n, sizeof(Vector));
+   ^
+exercises.c:88:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:92:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+d72eac0
