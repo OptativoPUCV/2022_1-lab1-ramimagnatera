@@ -85,7 +85,8 @@ typedef struct {
 
 Vector* crearVector(int n){
 
-  p = (Vector*)calloc(n, sizeof(Vector));
+  Vector* p = (Vector*)calloc(n, sizeof(Vector));
+  p->capacidad = n;
   if(p == 0) exit(EXIT_FAILURE);
   
   return p;
