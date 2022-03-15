@@ -591,3 +591,16 @@ exercises.c:88:4: error: ‘p’ undeclared (first use in this function)
 exercises.c:88:4: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d5e4bbc
+Tue Mar 15 00:12:40 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearVector’:
+exercises.c:89:11: error: redefinition of ‘p’
+   Vector* p = (Vector*) malloc(n*sizeof(Vector));
+           ^
+exercises.c:88:11: note: previous definition of ‘p’ was here
+   Vector* p = NULL;
+           ^
+Compilation failed
+6ea5e25
