@@ -621,3 +621,17 @@ Tue Mar 15 00:13:12 UTC 2022:
  tests:  3|4
 total_score: 30/70
 2027df2
+Tue Mar 15 00:13:33 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:15: error: too few arguments to function ‘calloc’
+   Vector* p = calloc(n*sizeof(Vector));
+               ^~~~~~
+In file included from test.c:2:0:
+/usr/include/stdlib.h:541:14: note: declared here
+ extern void *calloc (size_t __nmemb, size_t __size)
+              ^~~~~~
+Compilation failed
+fa37a0f
