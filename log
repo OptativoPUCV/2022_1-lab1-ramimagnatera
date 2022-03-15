@@ -678,3 +678,32 @@ Tue Mar 15 00:21:17 UTC 2022:
  tests:  3|4
 total_score: 30/70
 f6ffe73
+Tue Mar 15 00:24:39 UTC 2022: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from /usr/include/time.h:29:0,
+                 from test.c:4:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:14: error: invalid initializer
+   Vector p = NULL;
+              ^
+In file included from test.c:5:0:
+exercises.c:88:12: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   Vector* p->datos = (Vector*)calloc(n, sizeof(Vector));
+            ^~
+exercises.c:88:12: error: expected expression before ‘->’ token
+exercises.c:89:4: error: invalid type argument of ‘->’ (have ‘Vector {aka struct <anonymous>}’)
+   p->capacidad = n;
+    ^~
+exercises.c:90:8: error: invalid operands to binary == (have ‘Vector {aka struct <anonymous>}’ and ‘int’)
+   if(p == 0) exit(EXIT_FAILURE);
+        ^~
+exercises.c:91:10: error: incompatible types when returning type ‘Vector {aka struct <anonymous>}’ but ‘Vector * {aka struct <anonymous> *}’ was expected
+   return p;
+          ^
+exercises.c:92:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+79fcaec
