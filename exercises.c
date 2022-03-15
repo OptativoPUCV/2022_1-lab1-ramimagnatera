@@ -87,7 +87,7 @@ Vector* crearVector(int n){
 
   Vector* p = (Vector*)calloc(n, sizeof(Vector));
   if(p == 0) exit(EXIT_FAILURE);
-  p->capacidad = n;
+  p->capacidad = 0;
   return p;
 }
 
