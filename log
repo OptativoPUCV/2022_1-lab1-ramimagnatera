@@ -543,3 +543,14 @@ Mon Mar 14 02:58:48 UTC 2022:
  tests:  2|5
 total_score: 20/70
 8880508
+Tue Mar 15 00:03:57 UTC 2022: 
+ exercises.c | 12 +++++-------
+ 1 file changed, 5 insertions(+), 7 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:28: error: expected ‘;’ before ‘)’ token
+   strcpy(p->nombre, nombre));
+                            ^
+exercises.c:64:28: error: expected statement before ‘)’ token
+Compilation failed
+7d4c7ac
