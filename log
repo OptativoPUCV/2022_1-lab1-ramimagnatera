@@ -763,3 +763,19 @@ Tue Mar 15 05:14:15 UTC 2022:
  tests:  7|1
 total_score: 60/70
 bae6f64
+Wed Mar 16 02:59:45 UTC 2022: 
+ exercises.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV2’:
+exercises.c:144:19: error: ‘v1’ undeclared (first use in this function); did you mean ‘b1’?
+       c->datos[i]=v1->datos[i]+v2->datos[i];
+                   ^~
+                   b1
+exercises.c:144:19: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:144:32: error: ‘v2’ undeclared (first use in this function); did you mean ‘v1’?
+       c->datos[i]=v1->datos[i]+v2->datos[i];
+                                ^~
+                                v1
+Compilation failed
+46df8cb
