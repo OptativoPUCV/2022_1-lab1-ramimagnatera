@@ -779,3 +779,9 @@ exercises.c:144:32: error: ‘v2’ undeclared (first use in this function); did
                                 v1
 Compilation failed
 46df8cb
+Wed Mar 16 03:00:30 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|0
+total_score: 70/70
+fb5b277
